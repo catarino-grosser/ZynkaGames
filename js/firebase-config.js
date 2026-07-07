@@ -1,7 +1,3 @@
-// 1) Crie seu projeto no Firebase.
-// 2) Copie aqui o firebaseConfig do app Web.
-// 3) Troque FIREBASE_ENABLED para true.
-
 export const FIREBASE_ENABLED = true;
 
 export const firebaseConfig = {
