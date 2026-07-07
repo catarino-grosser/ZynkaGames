@@ -5,10 +5,10 @@
 export const FIREBASE_ENABLED = false;
 
 export const firebaseConfig = {
-  apiKey: "COLE_SUA_API_KEY_AQUI",
-  authDomain: "SEU_PROJETO.firebaseapp.com",
-  projectId: "SEU_PROJETO",
-  storageBucket: "SEU_PROJETO.appspot.com",
-  messagingSenderId: "000000000000",
-  appId: "1:000000000000:web:0000000000000000000000"
+  apiKey: "AIzaSyAoV3M1yhXCWTz3hkDdig7Ndyr10dmpVQ8",
+  authDomain: "zynkagames.firebaseapp.com",
+  projectId: "zynkagames",
+  storageBucket: "zynkagames.firebasestorage.app",
+  messagingSenderId: "426819801030",
+  appId: "1:426819801030:web:a9c7029f52d4e797c8ecc7"
 };
