@@ -32,8 +32,9 @@ async function loadAllAdventures() {
   const source = $('dataSource');
 
   if (firebaseResult.enabled && firebaseResult.adventures.length) {
-    adventures = normalizeAdventures(firebaseResult.adventures);
-    source.textContent = `Carregando aventuras do Firebase: ${firebaseResult.adventures.length} publicada(s).`;
+    // Une aventuras locais + Firebase. Se houver IDs iguais, a versão do Firebase prevalece.
+    adventures = normalizeAdventures([...localAdventures, ...firebaseResult.adventures]);
+    source.textContent = `Firebase conectado: ${firebaseResult.adventures.length} aventura(s) publicada(s) carregada(s).`;
     return;
   }
 

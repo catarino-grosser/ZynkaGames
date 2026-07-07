@@ -27,13 +27,16 @@ export async function loadFirebaseAdventures() {
 
   try {
     const { db, api } = await getFirebase();
+    // Consulta simples para evitar exigência de índice composto no Firestore.
+    // A ordenação é feita no navegador.
     const q = api.query(
       api.collection(db, 'aventuras'),
-      api.where('published', '==', true),
-      api.orderBy('order', 'asc')
+      api.where('published', '==', true)
     );
     const snapshot = await api.getDocs(q);
-    const adventures = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+    const adventures = snapshot.docs
+      .map(doc => ({ id: doc.id, ...doc.data() }))
+      .sort((a, b) => (Number(a.order ?? 9999) - Number(b.order ?? 9999)) || String(a.title || '').localeCompare(String(b.title || '')));
     return { enabled: true, adventures };
   } catch (error) {
     console.error('Erro ao carregar aventuras do Firebase:', error);
@@ -43,9 +46,10 @@ export async function loadFirebaseAdventures() {
 
 export async function listAllFirebaseAdventures() {
   const { db, api } = await getFirebase();
-  const q = api.query(api.collection(db, 'aventuras'), api.orderBy('order', 'asc'));
-  const snapshot = await api.getDocs(q);
-  return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+  const snapshot = await api.getDocs(api.collection(db, 'aventuras'));
+  return snapshot.docs
+    .map(doc => ({ id: doc.id, ...doc.data() }))
+    .sort((a, b) => (Number(a.order ?? 9999) - Number(b.order ?? 9999)) || String(a.title || '').localeCompare(String(b.title || '')));
 }
 
 export async function publishFirebaseAdventure(adventure) {
