@@ -1,0 +1,50 @@
+{
+  "title": "A Floresta Sombria",
+  "icon": "🌲",
+  "genre": "Fantasia",
+  "desc": "Uma floresta amaldiçoada cheia de segredos.",
+  "start": "inicio",
+  "published": true,
+  "order": 1,
+  "chapters": {
+    "inicio": {
+      "title": "Entrada da Floresta",
+      "text": "Você encontra uma trilha coberta por névoa.",
+      "choices": [
+        { "text": "Seguir pela trilha", "to": "lobo" },
+        { "text": "Procurar ervas", "to": "ervas" }
+      ]
+    },
+    "ervas": {
+      "title": "Ervas Medicinais",
+      "text": "Você encontra ervas brilhantes e recupera energia.",
+      "effect": { "hp": 5, "item": "Ervas Medicinais" },
+      "choices": [
+        { "text": "Continuar pela trilha", "to": "lobo" }
+      ]
+    },
+    "lobo": {
+      "title": "Lobo Sombrio",
+      "text": "Um lobo enorme surge entre as árvores.",
+      "enemy": {
+        "name": "Lobo Sombrio",
+        "hp": 11,
+        "atk": 3,
+        "rewardGold": 6,
+        "rewardItem": "Pele Sombria"
+      },
+      "winTo": "final",
+      "loseTo": "derrota"
+    },
+    "final": {
+      "title": "Final: A Névoa se Abre",
+      "text": "Você vence o guardião e encontra um antigo santuário.",
+      "end": true
+    },
+    "derrota": {
+      "title": "Fim da Jornada",
+      "text": "A floresta permanece invicta.",
+      "end": true
+    }
+  }
+}
