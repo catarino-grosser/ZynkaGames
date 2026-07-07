@@ -27,3 +27,10 @@ Você não precisa criar os campos manualmente: abra `admin.html`, cole ou edite
 ## Atenção
 
 O painel admin desta versão é simples e não tem login. Para uso público, proteja o `admin.html` antes de divulgar o site.
+
+
+## Correção v2.1.1
+
+Esta versão removeu `orderBy('order')` da consulta principal do Firebase para evitar erro de índice composto no Firestore. Agora o jogo busca aventuras publicadas com `published == true` e ordena no navegador.
+
+Também une as aventuras locais com as aventuras do Firebase. Se uma aventura local e uma do Firebase tiverem o mesmo `id`, a versão do Firebase prevalece.
