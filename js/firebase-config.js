@@ -2,7 +2,7 @@
 // 2) Copie aqui o firebaseConfig do app Web.
 // 3) Troque FIREBASE_ENABLED para true.
 
-export const FIREBASE_ENABLED = false;
+export const FIREBASE_ENABLED = true;
 
 export const firebaseConfig = {
   apiKey: "AIzaSyAoV3M1yhXCWTz3hkDdig7Ndyr10dmpVQ8",
