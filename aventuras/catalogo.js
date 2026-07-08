@@ -10,4 +10,5 @@
 export const aventuraArquivos = [
   './aventuras/reino-perdido.js',
   './aventuras/fortaleza-rei-esquecido.js'
+  './aventuras/estacao-orion.js',
 ];
