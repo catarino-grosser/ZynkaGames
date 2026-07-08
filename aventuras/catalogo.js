@@ -12,4 +12,5 @@ export const aventuraArquivos = [
   './aventuras/fortaleza-rei-esquecido.js',
   './aventuras/estacao-orion.js',
   './aventuras/planeta-esquecido.js',
+  './aventuras/castelo-das-sombras.js',
 ];
