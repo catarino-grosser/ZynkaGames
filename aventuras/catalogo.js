@@ -14,4 +14,5 @@ export const aventuraArquivos = [
   './aventuras/planeta-esquecido.js',
   './aventuras/castelo-das-sombras.js',
   './aventuras/ilha-dos-dinossauros.js',
+  './aventuras/piratas-do-mar-escarlate.js',
 ];
