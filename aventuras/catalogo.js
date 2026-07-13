@@ -17,4 +17,5 @@ export const aventuraArquivos = [
   './aventuras/piratas-do-mar-escarlate.js',
   './aventuras/o-ultimo-feiticeiro.js',
   './aventuras/cidade-zumbi.js',
+  './aventuras/a-piramide-perdida.js',
 ];
