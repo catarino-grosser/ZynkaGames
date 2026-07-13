@@ -16,4 +16,5 @@ export const aventuraArquivos = [
   './aventuras/ilha-dos-dinossauros.js',
   './aventuras/piratas-do-mar-escarlate.js',
   './aventuras/o-ultimo-feiticeiro.js',
+  './aventuras/cidade-zumbi.js',
 ];
