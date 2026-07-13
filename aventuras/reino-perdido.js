@@ -13,7 +13,7 @@ const aventura = {
     start: 'cap01',
     maxChapters: 10,
     assets: {
-      music: './assets/musicas/TrilhaAventuraEpica1.pm3,
+      music: '',
       sfx: {
         click: '',
         attack: '',
