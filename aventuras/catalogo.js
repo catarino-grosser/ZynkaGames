@@ -20,4 +20,5 @@ export const aventuraArquivos = [
   './aventuras/a-piramide-perdida.js',
   './aventuras/missao-marte.js',
   './aventuras/o-reino-congelado.js',
+  './aventuras/a-maquina-do-tempo.js',
 ];
