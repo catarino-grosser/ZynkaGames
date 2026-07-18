@@ -19,4 +19,5 @@ export const aventuraArquivos = [
   './aventuras/cidade-zumbi.js',
   './aventuras/a-piramide-perdida.js',
   './aventuras/missao-marte.js',
+  './aventuras/o-reino-congelado.js',
 ];
