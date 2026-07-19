@@ -22,4 +22,5 @@ export const aventuraArquivos = [
   './aventuras/o-reino-congelado.js',
   './aventuras/a-maquina-do-tempo.js',
   './aventuras/o-trem-fantasma.js',
+  'cidade-submersa.js'
 ];
