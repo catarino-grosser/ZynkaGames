@@ -12,7 +12,7 @@ const aventura = {
   start: 'cap01',
   maxChapters: 20,
   assets: {
-    music: '',
+    music: './assets/musicas/TrilhaTerror.mp3',
     sfx: { click: '', attack: '', victory: '', item: '', levelup: '', puzzle: '' }
   },
   chapters: {
