@@ -26,4 +26,5 @@ export const aventuraArquivos = [
   './aventuras/operacao-eclipse.js',
   './aventuras/portal-dos-deuses.js',
   './aventuras/sobreviventes-do-gelo.js',
+  './aventuras/laboratorio-47.js',
 ];
