@@ -9,7 +9,7 @@ const aventura = {
     genre: 'Fantasia medieval',
     difficulty: 'Fácil',
     estimatedTime: '15 a 25 min',
-    desc: 'Uma aventura maior, com 10 capítulos, inventário, batalhas, itens, XP e múltiplos finais.',
+    desc: 'Em Pedra Alta, um herói enfrenta goblins, esqueletos e um guardião amaldiçoado para decidir o destino da Coroa do Reino Perdido.',
     start: 'cap01',
     maxChapters: 10,
     assets: {
