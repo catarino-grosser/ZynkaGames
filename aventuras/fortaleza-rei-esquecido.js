@@ -8,7 +8,7 @@ const aventura = {
   genre: 'Fantasia sombria',
   difficulty: 'Média',
   estimatedTime: '25 a 40 min',
-  desc: 'Uma campanha com 15 capítulos, NPCs, missões secundárias, tesouros, enigmas, eventos aleatórios e batalhas contra guardiões amaldiçoados.',
+  desc: 'Um herói invade a Fortaleza do Rei Esquecido para recuperar o Coração de Cristal antes que o feiticeiro Morvath desperte e domine o reino.',
   start: 'cap01',
   maxChapters: 15,
   assets: {

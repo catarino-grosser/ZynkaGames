@@ -8,7 +8,7 @@ const aventura = {
   genre: 'Ficção científica',
   difficulty: 'Média',
   estimatedTime: '30 a 45 min',
-  desc: 'Uma campanha sci-fi com 15 capítulos, exploração espacial, IA misteriosa, batalhas contra drones, enigmas tecnológicos, tesouros escondidos e múltiplos finais.',
+  desc: 'Uma tripulante investiga a Estação Órion, abandonada há 20 anos, e enfrenta uma IA que decide quem vive ou morre em nome da sobrevivência.',
   start: 'cap01',
   maxChapters: 15,
   assets: {
