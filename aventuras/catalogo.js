@@ -28,5 +28,6 @@ export const aventuraArquivos = [
   './aventuras/sobreviventes-do-gelo.js',
   './aventuras/laboratorio-47.js',
   './aventuras/floresta-proibida.js',
-  './aventuras/ultima-nave.js'
+  './aventuras/ultima-nave.js',
+  './aventuras/mansao-blackwood.js'
 ];
